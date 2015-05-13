@@ -2,6 +2,7 @@ require 'minitest/autorun'
 
 require './human'
 require './coffee'
+require 'pry'
 
 ## This assignment made more sense when I wrote it in the morning.
 class CaffeineTest < MiniTest::Test

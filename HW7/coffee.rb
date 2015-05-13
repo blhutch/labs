@@ -4,7 +4,7 @@ class Coffee
     @name = name
     @full = true
     @empty = false
-    
+    @size = 3
   end
 
   def full?
@@ -13,9 +13,14 @@ class Coffee
 
   def change_fullness
     @full = false
+    @size -= 1
   end
-
+  
   def empty?
-    @empty
-  end
+    if @size == 0
+      @empty = true
+    else
+      @empty
+    end
+  end      
 end

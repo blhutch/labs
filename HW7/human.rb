@@ -5,7 +5,7 @@ class Human
   end
 
   def alertness
-    @alertness
+    @alertness 
   end
 
   def has_coffee?
@@ -19,10 +19,10 @@ class Human
   def buy(drink)
     @drink = drink
   end
-
+  
   def drink!
-    @alertness = 0.34
-    @drink.change_fullness
-  end
+  @alertness += 0.33
+  @drink.change_fullness
+  end  
 
 end
