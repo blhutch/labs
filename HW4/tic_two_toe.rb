@@ -42,7 +42,8 @@ def take_turn(turn_count, board)
     end  
     index = number - 1
     board[index] = 'o'
-    return board  
+    return board
+      
   else
     # This is X's turn
     puts "It's x's turn!"
