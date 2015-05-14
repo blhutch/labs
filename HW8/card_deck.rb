@@ -1,11 +1,11 @@
 require 'pry'
 
 module IronYardGames
+  RANKS = (2..10).to_a + [:J, :Q, :K, :A]
+    SUITS = [:diamonds, :clubs, :spades, :hearts]
+
   class Card
     include Comparable
-
-    RANKS = (2..10).to_a + [:J, :Q, :K, :A]
-    SUITS = [:diamonds, :clubs, :spades, :hearts]
 
     RANK_VALUES = {J: 11, Q: 12, K: 13, A: 14}
 
@@ -31,8 +31,8 @@ module IronYardGames
 
     def initialize
       @deck = []
-      Card::SUITS.each do |suit|
-        Card::RANKS.each do |rank|
+      SUITS.each do |suit|
+        RANKS.each do |rank|
           @deck << Card.new(rank, suit)
         end
       end
