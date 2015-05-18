@@ -140,7 +140,6 @@ def play_game
         play_game
       else
         puts "Thanks for playing. Good bye."
-        exit
       end
   elsif game_details.last == '2'
     win = []
@@ -164,7 +163,6 @@ def play_game
         play_game
       else
         puts "Thanks for playing. Good bye."
-        exit
       end
   elsif game_details.last == '3'
     win = []
@@ -188,7 +186,6 @@ def play_game
         play_game
       else
         puts "Thanks for playing. Good bye."
-        exit
       end
   else
     win = []
@@ -212,7 +209,6 @@ def play_game
         play_game
       else
         puts "Thanks for playing. Good bye."
-        exit
       end 
   end
 end
